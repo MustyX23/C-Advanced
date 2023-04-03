@@ -1,4 +1,4 @@
-📚 C# Advanced Repository Readme 📚
+# 📚 C# Advanced Repository Readme 📚
 
 Hello! This is my C# advanced repository, where I showcase some of the advanced programming concepts I've learned during my studies. Here, you'll find a variety of topics related to C# programming, including stacks and queues, multidimensional arrays, sets and dictionaries, streams, files and directories, defining classes, implementing linked lists, generics, iterators and comparators, and algorithms.
 
