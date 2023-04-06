@@ -3,25 +3,27 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.3.32819.101
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "01. Unique Usernames", "01. Unique Usernames.csproj", "{155F7449-45F7-4D69-BBA0-1D10B4DBE92E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "01. Unique Usernames", "01. Unique Usernames.csproj", "{155F7449-45F7-4D69-BBA0-1D10B4DBE92E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "02. Sets of Elements", "..\02. Sets of Elements\02. Sets of Elements.csproj", "{06F50882-461C-452D-97B7-EC27116E5462}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "02. Sets of Elements", "..\02. Sets of Elements\02. Sets of Elements.csproj", "{06F50882-461C-452D-97B7-EC27116E5462}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "03. Periodic Table", "..\03. Periodic Table\03. Periodic Table.csproj", "{6DEC483D-506E-48AB-88C9-8E930E2BA054}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "03. Periodic Table", "..\03. Periodic Table\03. Periodic Table.csproj", "{6DEC483D-506E-48AB-88C9-8E930E2BA054}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "04. Even Times", "..\04. Even Times\04. Even Times.csproj", "{4724F42B-05CA-4903-B690-7A5C4C81A278}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "04. Even Times", "..\04. Even Times\04. Even Times.csproj", "{4724F42B-05CA-4903-B690-7A5C4C81A278}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "05. Count Symbols", "..\05. Count Symbols\05. Count Symbols.csproj", "{BF1C7749-9DFD-47CD-AFA9-E6F88395B7B1}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "05. Count Symbols", "..\05. Count Symbols\05. Count Symbols.csproj", "{BF1C7749-9DFD-47CD-AFA9-E6F88395B7B1}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "06. Wardrobe", "..\06. Wardrobe\06. Wardrobe.csproj", "{EC52BFEC-BA04-4D79-939D-5A59E324328A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "06. Wardrobe", "..\06. Wardrobe\06. Wardrobe.csproj", "{EC52BFEC-BA04-4D79-939D-5A59E324328A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "07. The V-Logger", "..\07. The V-Logger\07. The V-Logger.csproj", "{FC2A0BB9-522D-43F6-A66C-0C2EC59232CE}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "07. The V-Logger", "..\07. The V-Logger\07. The V-Logger.csproj", "{FC2A0BB9-522D-43F6-A66C-0C2EC59232CE}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "08. Ranking", "..\08. Ranking\08. Ranking.csproj", "{5124A676-CD99-4896-8759-A9FBC191BFB7}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "08. Ranking", "..\08. Ranking\08. Ranking.csproj", "{5124A676-CD99-4896-8759-A9FBC191BFB7}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "09. SoftUni Exam Results", "..\09. SoftUni Exam Results\09. SoftUni Exam Results.csproj", "{0388CD67-5D26-4DD8-9C28-3CAB72FB9DBD}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "09. SoftUni Exam Results", "..\09. SoftUni Exam Results\09. SoftUni Exam Results.csproj", "{0388CD67-5D26-4DD8-9C28-3CAB72FB9DBD}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "10. ForceBook", "..\10. ForceBook\10. ForceBook.csproj", "{753EF5DF-C0CD-46C4-803D-82410C5F95A4}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "10. ForceBook", "..\10. ForceBook\10. ForceBook.csproj", "{753EF5DF-C0CD-46C4-803D-82410C5F95A4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "00.Demos", "..\00.Demos\00.Demos.csproj", "{9641BF58-3345-4D75-B72E-22D2B4B939E7}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -69,6 +71,10 @@ Global
 		{753EF5DF-C0CD-46C4-803D-82410C5F95A4}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{753EF5DF-C0CD-46C4-803D-82410C5F95A4}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{753EF5DF-C0CD-46C4-803D-82410C5F95A4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9641BF58-3345-4D75-B72E-22D2B4B939E7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9641BF58-3345-4D75-B72E-22D2B4B939E7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9641BF58-3345-4D75-B72E-22D2B4B939E7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9641BF58-3345-4D75-B72E-22D2B4B939E7}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
