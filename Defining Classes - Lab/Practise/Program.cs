@@ -6,25 +6,41 @@ namespace Practise
     {
         static void Main(string[] args)
         {
-            Person person = new Person()
-            {
-                Name = "Mustafa",
-                Age = 13,
-                Gender = "male"
-            };
-            person.Introduce();
+            Rectangle square = new Rectangle(5, 5);
+
+            Console.WriteLine($"The area of the reactangle is: {square.Area()}");
+            Console.WriteLine($"The parameter of the reactangle is: {square.Parameter()}");
+            Console.WriteLine($"Is the reactangle a square: {square.IsSquare()}");
         }
     }
-    class Person 
+    public class Rectangle
     {
-        public string Name { get; set; }
-        public int Age { get; set; }
-        public string Gender { get; set; }
-
-        public Person Introduce()
+        public Rectangle(double width, double height)
         {
-            Console.WriteLine($"Hello, my name is {Name}. I'm {Age} years old and I identify as {Gender}.");
-            return new Person();
+            Width = width;
+            Height = height;
+        }
+
+        public double Width { get; set; }
+        public double Height { get; set; }
+
+        public double Area()
+        {
+            return Width * Height;
+        }
+
+        public double Parameter()
+        {
+            return (2 * Width) + (2 * Height);
+        }
+
+        public bool IsSquare()
+        {
+            if (Width == Height)
+            {
+                return true;
+            }
+            return false;
         }
     }
 }
