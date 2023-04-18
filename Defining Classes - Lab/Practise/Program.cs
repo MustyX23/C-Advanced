@@ -6,41 +6,59 @@ namespace Practise
     {
         static void Main(string[] args)
         {
-            Rectangle square = new Rectangle(5, 5);
+            Car car = new Car()
+            {
+                Make = "BMW",
+                Model ="X3",
+                Year = 2018,
+                CurrentSpeed = 120
+            };
 
-            Console.WriteLine($"The area of the reactangle is: {square.Area()}");
-            Console.WriteLine($"The parameter of the reactangle is: {square.Parameter()}");
-            Console.WriteLine($"Is the reactangle a square: {square.IsSquare()}");
+            car._ToString();
+            Console.WriteLine("------------------");
+
+            //Accelerate
+            for (int i = 0; i < 3; i++)
+            {
+                car.Accelerate();
+                car.TopSpeed = car.CurrentSpeed;
+            }
+
+            Console.WriteLine($"Top speed: {car.TopSpeed} mph.");
+
+            //Brake
+            for (int i = 0; i < 2; i++)
+            {
+                car.Brake();
+                Console.WriteLine($"You are going with: {car.CurrentSpeed} mph.");
+            }
+
         }
     }
-    public class Rectangle
+    public class Car
     {
-        public Rectangle(double width, double height)
+        //Make(string)
+        public string Make { get; set; }
+        //Model(string)
+        public string Model { get; set; }
+        //Year(int)
+        public int Year { get; set; }
+        //TopSpeed(int)
+        public int TopSpeed { get; set; }
+        //CurrentSpeed(int)
+        public int CurrentSpeed { get; set; }
+
+        public int Accelerate()
         {
-            Width = width;
-            Height = height;
+            return CurrentSpeed += 10;
         }
-
-        public double Width { get; set; }
-        public double Height { get; set; }
-
-        public double Area()
+        public int Brake()
         {
-            return Width * Height;
+            return CurrentSpeed -= 10;
         }
-
-        public double Parameter()
+        public void _ToString()
         {
-            return (2 * Width) + (2 * Height);
-        }
-
-        public bool IsSquare()
-        {
-            if (Width == Height)
-            {
-                return true;
-            }
-            return false;
+            Console.WriteLine($"Make: {Make}\nModel: {Model}\nYear: {Year}\nCurrent Speed: {CurrentSpeed}");
         }
     }
 }
