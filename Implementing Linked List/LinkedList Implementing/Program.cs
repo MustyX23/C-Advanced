@@ -24,6 +24,12 @@ namespace LinkedList_Implementing
             {
                 Console.WriteLine(students);
             }
+
+            //Clear(): This method is used to remove all nodes from the LinkedList.
+            //Remove(LinkedListNode): This method is used to remove the specified node from the LinkedList.
+            //Remove(T): This method is used to remove the first occurrence of the specified value from the LinkedList.
+            //RemoveFirst(): This method is used to remove the node at the start of the LinkedList.
+            //RemoveLast(): This method is used to remove the node at the end of the LinkedList.
         }
     }
 }
