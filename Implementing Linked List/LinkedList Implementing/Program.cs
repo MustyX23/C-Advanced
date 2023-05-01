@@ -16,9 +16,14 @@ namespace LinkedList_Implementing
             linkedList.AddLast("Dragan");
             linkedList.AddLast("Dimitri4ko");
 
-            
+            Console.WriteLine("The best students of the whole school are:");
 
+            //Accessing elements from the LinkedList using foreach loop
 
+            foreach (string students in linkedList)
+            {
+                Console.WriteLine(students);
+            }
         }
     }
 }
