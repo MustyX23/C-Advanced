@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq;
 
 namespace _00._Demos
 {
@@ -7,6 +8,11 @@ namespace _00._Demos
     {
         static void Main(string[] args)
         {
+            string hey = "Hello";
+            Console.WriteLine(hey.Reverse().ToArray());
+
+            List<int> integers = Console.ReadLine().Split(' ').Select(int.Parse).ToList();
+            SumAndGo(integers);
             //int a = 10;
             //int b = 20;
 
@@ -32,6 +38,17 @@ namespace _00._Demos
         static int MakeCalculations(int x, int y, Func<int, int, int> operators)
         {
             return operators(x, y);
-        }       
+        }
+        
+        static void ReverseString(string input)
+        {
+            Array.Reverse(input.ToCharArray());            
+        }
+
+        static void SumAndGo(List<int> integers)
+        {
+            Console.WriteLine(integers.Sum());
+            Console.WriteLine(integers.Average());
+        }
     }
 }
