@@ -9,27 +9,22 @@ namespace DefiningClasses
         static void Main(string[] args)
         {
             int n = int.Parse(Console.ReadLine());
-            Family family = new Family();
+            List<Person> older = new List<Person>();
            
             for (int i = 0; i < n; i++)
             {
-                string[] input = Console.ReadLine().Split().ToArray();
+                string[] personInfo = Console.ReadLine().Split(' ');
 
-                string name = input[0];
-                int age = int.Parse(input[1]);
-
-                Person member = new Person(name, age);
-
-                family.AddMember(member);                
+                string name = personInfo[0];
+                int age = int.Parse(personInfo[1]);
+                older.Add(new Person(name, age));
             }
+            older = older.Where(person => person.Age > 30).OrderBy(person => person.Name).ToList();
 
-            List<Person> peopleOver30 = family.GetPersonOver30();
-
-            foreach (var member in peopleOver30)
+            foreach (var person in older)
             {
-                Console.WriteLine($"{member.Name} - {member.Age}");
+                Console.WriteLine($"{person.Name} - {person.Age}");
             }
-
         }
     }
 }
