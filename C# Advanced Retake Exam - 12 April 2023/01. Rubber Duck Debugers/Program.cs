@@ -23,10 +23,14 @@ namespace RubberDucks
                 { "Big Blue Rubber Ducky", 0 },
                 { "Small Yellow Rubber Ducky", 0 }
             };
+                
 
-            while (times.Any() && tasks.Any())
+            while (times.Count != 0 && tasks.Count != 0)
             {
-                int sum = times.Peek() * tasks.Peek();
+                int time = times.Dequeue();
+                int task = tasks.Pop();
+
+                int sum = time * task;
 
                 if ((sum >= 0) && (sum <= 240))
                 {
@@ -46,14 +50,12 @@ namespace RubberDucks
                     {
                         ducks["Small Yellow Rubber Ducky"]++;
                     }
-                    times.Dequeue();
-                    tasks.Pop();
-                    continue;
                 }
                 else
                 {
-                    tasks.Push(tasks.Pop() - 2);
-                    times.Enqueue(times.Dequeue());
+                    task -= 2;
+                    tasks.Push(task);
+                    times.Enqueue(time);
                 }
             }
 
@@ -63,6 +65,7 @@ namespace RubberDucks
             {
                 Console.WriteLine($"{duck.Key}: {duck.Value}");
             }
+
         }
     }
 }

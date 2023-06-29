@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.3.32819.101
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "01. Temple of Doom", "01. Temple of Doom.csproj", "{9CFDAB35-144C-4167-81DD-FF4E49CE6DF6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "02. Mouse In The Kitchen", "..\02. Mouse In The Kitchen\02. Mouse In The Kitchen.csproj", "{1F53F7FF-654E-4DF3-8865-3ED407D7C00B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{9CFDAB35-144C-4167-81DD-FF4E49CE6DF6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9CFDAB35-144C-4167-81DD-FF4E49CE6DF6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9CFDAB35-144C-4167-81DD-FF4E49CE6DF6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9CFDAB35-144C-4167-81DD-FF4E49CE6DF6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1F53F7FF-654E-4DF3-8865-3ED407D7C00B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1F53F7FF-654E-4DF3-8865-3ED407D7C00B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1F53F7FF-654E-4DF3-8865-3ED407D7C00B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1F53F7FF-654E-4DF3-8865-3ED407D7C00B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {2930AF9C-356E-43B0-BD38-88078F7B21D2}
+	EndGlobalSection
+EndGlobal
